@@ -1,0 +1,1 @@
+{"flutter":{"platforms":{"android":{"default":{"projectId":"hermifyapp","appId":"1:103061184777:android:76d274c4ddff878a27f3d8","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"hermifyapp","configurations":{"android":"1:103061184777:android:76d274c4ddff878a27f3d8","ios":"1:103061184777:ios:cbec6d43f601e84227f3d8"}}}}}}

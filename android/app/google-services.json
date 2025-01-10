@@ -7,6 +7,25 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:103061184777:android:76d274c4ddff878a27f3d8",
+        "android_client_info": {
+          "package_name": "com.snt.hermif"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb-OZ98U1XYo9Ku1d4ZwEiYQV1RoBm15o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:103061184777:android:c50dcce78b3283ce27f3d8",
         "android_client_info": {
           "package_name": "com.snt.hermifyapp"
