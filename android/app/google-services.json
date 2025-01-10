@@ -43,12 +43,56 @@
     },
     {
       "client_info": {
+        "mobilesdk_app_id": "1:103061184777:android:4791a044758104fe27f3d8",
+        "android_client_info": {
+          "package_name": "com.snt.hermify"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "103061184777-404dm2rpj2ne0u8i2mhckhfoscomb33d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDb-OZ98U1XYo9Ku1d4ZwEiYQV1RoBm15o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "103061184777-404dm2rpj2ne0u8i2mhckhfoscomb33d.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "103061184777-7mdlsoimibublk57o4dluqtmk07ffh78.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.snt.hermifyapp"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:103061184777:android:c50dcce78b3283ce27f3d8",
         "android_client_info": {
           "package_name": "com.snt.hermifyapp"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "103061184777-bfachiipk1ovpd00en9v8oag67eh96q6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.snt.hermifyapp",
+            "certificate_hash": "188f39381cf69b37ec59023bd999c58651f7dd80"
+          }
+        },
         {
           "client_id": "103061184777-404dm2rpj2ne0u8i2mhckhfoscomb33d.apps.googleusercontent.com",
           "client_type": 3
