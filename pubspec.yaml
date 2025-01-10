@@ -1,0 +1,39 @@
+name: hermifyapp
+description: "A new Flutter project."
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.8.1
+  firebase_auth: ^5.3.4
+  provider: ^6.1.2
+  google_sign_in: ^6.2.2
+  firebase_messaging: ^15.1.6
+  font_awesome_flutter: ^10.8.0
+  shared_preferences: ^2.3.3
+  intl: ^0.20.1
+  firebase_crashlytics: ^4.2.0
+  
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.14.2  
+  change_app_package_name: ^1.4.0
+
+  flutter_lints: ^4.0.0
+flutter:
+  uses-material-design: true
+
+  # assets:
+  #   - images/a_dot_burr.jpeg
+  #   - images/a_dot_ham.jpeg
+
