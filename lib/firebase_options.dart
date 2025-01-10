@@ -51,7 +51,7 @@ class DefaultFirebaseOptions {
 
   static const FirebaseOptions android = FirebaseOptions(
     apiKey: 'AIzaSyDb-OZ98U1XYo9Ku1d4ZwEiYQV1RoBm15o',
-    appId: '1:103061184777:android:76d274c4ddff878a27f3d8',
+    appId: '1:103061184777:android:c50dcce78b3283ce27f3d8',
     messagingSenderId: '103061184777',
     projectId: 'hermifyapp',
     storageBucket: 'hermifyapp.firebasestorage.app',
@@ -63,6 +63,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '103061184777',
     projectId: 'hermifyapp',
     storageBucket: 'hermifyapp.firebasestorage.app',
+    iosClientId: '103061184777-7mdlsoimibublk57o4dluqtmk07ffh78.apps.googleusercontent.com',
     iosBundleId: 'com.snt.hermifyapp',
   );
+
 }
