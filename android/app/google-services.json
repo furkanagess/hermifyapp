@@ -86,11 +86,11 @@
       },
       "oauth_client": [
         {
-          "client_id": "103061184777-bfachiipk1ovpd00en9v8oag67eh96q6.apps.googleusercontent.com",
+          "client_id": "103061184777-mkb6fhr9o061f1ffs77lfk8lts972amu.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
             "package_name": "com.snt.hermifyapp",
-            "certificate_hash": "188f39381cf69b37ec59023bd999c58651f7dd80"
+            "certificate_hash": "53be941c833ff5ec4c67dec8570fc1ab218a9429"
           }
         },
         {
