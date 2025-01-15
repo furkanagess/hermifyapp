@@ -55,7 +55,26 @@
 <array>
     <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 </array>
+<key>CFBundleURLTypes</key>
+<array>
+    <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+            <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+        </array>
+    </dict>
+    <dict>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>CFBundleURLSchemes</key>
+        <array>
+            <string>com.googleusercontent.apps.103061184777-7mdlsoimibublk57o4dluqtmk07ffh78</string>
+        </array>
+    </dict>
 
+</array>
 
 </dict>
 </plist>
