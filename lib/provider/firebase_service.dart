@@ -181,4 +181,79 @@ class FirebaseService {
       print("Error unsubscribing from $topic: $e");
     }
   }
+
+  // Bildirim verilerini işleyen ve kaydeden metod
+  Future<void> handleBackgroundMessage(RemoteMessage message) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      List<String> notifications = prefs.getStringList(_notificationsKey) ?? [];
+
+      String formattedNotification = jsonEncode({
+        'title': message.notification?.title,
+        'body': message.notification?.body,
+        'data': message.data,
+        'timestamp': DateTime.now().toIso8601String(),
+        'isRead': false,
+      });
+
+      notifications.add(formattedNotification);
+      await prefs.setStringList(_notificationsKey, notifications);
+    } catch (e) {
+      print("Error handling background message: $e");
+    }
+  }
+
+  // Bildirimleri getiren metod
+  Future<List<Map<String, dynamic>>> getNotifications() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      final notifications = prefs.getStringList(_notificationsKey) ?? [];
+
+      return notifications
+          .map((notification) =>
+              json.decode(notification) as Map<String, dynamic>)
+          .toList();
+    } catch (e) {
+      print("Error getting notifications: $e");
+      return [];
+    }
+  }
+
+  // Okunmamış bildirim sayısını getiren metod
+  Future<int> getUnreadNotificationCount() async {
+    try {
+      final notifications = await getNotifications();
+      return notifications.where((n) => n['isRead'] == false).length;
+    } catch (e) {
+      print("Error getting unread notification count: $e");
+      return 0;
+    }
+  }
+
+  // Bildirimi okundu olarak işaretleyen metod
+  Future<void> markNotificationAsRead(int index) async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      List<String> notifications = prefs.getStringList(_notificationsKey) ?? [];
+
+      if (index >= 0 && index < notifications.length) {
+        var notification = json.decode(notifications[index]);
+        notification['isRead'] = true;
+        notifications[index] = json.encode(notification);
+        await prefs.setStringList(_notificationsKey, notifications);
+      }
+    } catch (e) {
+      print("Error marking notification as read: $e");
+    }
+  }
+
+  // Tüm bildirimleri temizleyen metod
+  Future<void> clearAllNotifications() async {
+    try {
+      final prefs = await SharedPreferences.getInstance();
+      await prefs.setStringList(_notificationsKey, []);
+    } catch (e) {
+      print("Error clearing notifications: $e");
+    }
+  }
 }

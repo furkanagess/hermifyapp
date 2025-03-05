@@ -39,17 +39,17 @@ class HomeViewModel extends ChangeNotifier {
   Future<void> loadTopicSubscriptions() async {
     final prefs = await SharedPreferences.getInstance();
     _topicSubscriptions = {
-      'bildirimleri_goster': prefs.getBool('bildirimleri_goster') ?? false,
-      'uygulama_bildirimleri': prefs.getBool('uygulama_bildirimleri') ?? false,
-      'duyurular': prefs.getBool('duyurular') ?? false,
-      'portfoy_bildirimleri': prefs.getBool('portfoy_bildirimleri') ?? false,
-      'haber_bildirimleri': prefs.getBool('haber_bildirimleri') ?? false,
-      'model_portfoy': prefs.getBool('model_portfoy') ?? false,
-      'arastirma_raporlari': prefs.getBool('arastirma_raporlari') ?? false,
-      'teknik_oneriler': prefs.getBool('teknik_oneriler') ?? false,
-      'fiyat_bildirimleri': prefs.getBool('fiyat_bildirimleri') ?? false,
-      'emir_bildirimleri': prefs.getBool('emir_bildirimleri') ?? false,
-      'bilanco_bildirimleri': prefs.getBool('bilanco_bildirimleri') ?? false,
+      'main': prefs.getBool('main') ?? false,
+      'app': prefs.getBool('app') ?? false,
+      'announcements': prefs.getBool('announcements') ?? false,
+      'invest': prefs.getBool('invest') ?? false,
+      'news': prefs.getBool('news') ?? false,
+      'portfoy': prefs.getBool('portfoy') ?? false,
+      'research': prefs.getBool('research') ?? false,
+      'technicalSuggestions': prefs.getBool('technicalSuggestions') ?? false,
+      'price': prefs.getBool('price') ?? false,
+      'order': prefs.getBool('order') ?? false,
+      'balance_sheet': prefs.getBool('balance_sheet') ?? false,
     };
     notifyListeners();
   }
